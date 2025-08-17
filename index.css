@@ -1,0 +1,434 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: "Libertinus Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+}
+
+.section
+{
+    display:flex;
+    gap:4rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+}
+.introduction
+{
+    display:flex;
+    margin-top:4rem;
+    justify-content: space-around;
+    gap:4rem;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.innerabout_me
+{
+    height:100px;
+    font-size: 22px;
+    margin-bottom: 2rem;
+}
+.header h1
+{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-family: "Libertinus Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.about_me{
+    width:700px;
+}
+.about_me img
+{
+    border-radius:50%;
+    height:500px;
+    box-shadow: 12px 12px 12px grey;
+    border-color:5px black;
+}
+
+/* HTML: <div class="hexagon"></div> */
+.hexagon {
+    height: 200px; /* adjust to control the size  */
+    aspect-ratio: 1/cos(30deg);
+    clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+    background: #3B8686;
+    font-size: 12px;
+    text-align: center;
+  }
+  .list_of_services
+  {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .testimony_section{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .inner_testimony_section
+  {
+  display:flex;
+  justify-content: space-around;
+  justify-content: center;
+  gap:2rem;
+  align-items: center;
+  padding:2rem;
+  background: transparent;
+  }
+  .statement{
+    background: transparent;
+  }
+  .inner_testimony_section:hover{
+    background-color: white;
+    color:black;
+ border-color: green;
+    transition: 0.3s ease-in;
+  }
+  .statement:hover{
+    background: transparent;
+  }
+  .inner_testimony_section img{
+    border-radius: 50%;
+  }
+  #typer
+  {
+    font-size: 42px;
+    color:#2563eb;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  .statement
+  {
+    font-size: 17px;
+  }
+  .lower_services{
+    display:flex;
+    gap:10rem;
+    flex-wrap: wrap;
+  }
+  .upper_services
+  {
+    display:flex;
+    gap:10rem;
+    flex-wrap: wrap;
+  }
+  #services
+  {
+    margin-top: 4rem;
+  }
+  .upper_services .hexagon:nth-child(odd)
+  {
+    margin-top:2rem;
+  }
+   .hexagon:nth-child(even){
+   background-color: green;
+    color:white;
+     margin-top:5rem;
+     left:2rem;
+  }
+  .hexagon:nth-child(odd)
+  {
+    background-color: #2563eb;
+    color:black;
+  }
+  .hexagon:nth-child(odd):hover{
+    transform: translateY(22px);
+    transition: 0.3s ease-in;
+    background-color: rgb(89, 15, 200);
+    color:rgb(199, 216, 199);
+    width:400px;
+    font-size: 22px;
+  }
+  .hexagon:nth-child(even):hover{
+    transform: translateY(-22px);
+    transition: 0.3s ease-in;
+    background-color: #6b7280;
+    color:rgb(235, 232, 232);
+    width:400px;
+    font-size: 22px;
+    transition: 0.3s ease-in;
+  }
+  .hexagon{
+    margin-top:10rem;
+    text-align: center;
+    display:flex;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 12px 12px 12px grey;
+    transition: 0.3s ease-in;
+  }
+
+.lower_services{
+    margin-bottom:4rem;
+}
+
+  /* HTML: <div class="ribbon">Your text content</div> */
+.ribbon {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .ribbon {
+    --d: .8em; /* the depth */
+    
+    position: absolute;
+    top: 20px;
+    inset-inline: calc(-1*var(--d));
+    border-bottom: var(--d) solid #0008;
+    line-height: 1.8;
+    clip-path: polygon(0 0,100% 0,100% calc(100% - var(--d)),calc(100% - var(--d)) 100%,calc(100% - var(--d)) calc(100% - var(--d)),var(--d) calc(100% - var(--d)),var(--d) 100%,0 calc(100% - var(--d)));
+    background-color: #3FB8AF; /* the main color */
+  }
+  .testimony
+  {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .testimony_section
+  {
+    display:grid;
+    grid-template-columns: repeat(2,100fr);
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:2rem;
+    padding:2rem;
+    border-radius: 22px;
+    box-shadow: 12px 12px 12px grey;
+    background: rgb(241, 229, 229);
+    margin:2rem;
+  }
+
+  .contact-section {
+    width: 100%;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 1rem;
+  }
+  
+  .contact-intro > * + * {
+    margin-top: 1rem;
+  }
+  
+  .contact-title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+  }
+  
+  .contact-description {
+    color: rgb(107 114 128);
+  }
+  
+  .form-group-container {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-label {
+    margin-bottom: 0.5rem;
+  }
+  .form-input,
+  .form-textarea {
+    padding: 0.5rem;
+    border: 1px solid #e5e7eb;
+    display: flex;
+    height: 2.5rem;
+    width: 450px;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .form-input::placeholder,
+  .form-textarea:focus-visible {
+    color: #6b7280;
+  }
+
+  .form-input:focus-visible,
+  .form-textarea:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+  }
+.prices
+{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.prices button{
+  width:200px;
+  padding:10px;
+  border-radius: 22px;
+  text-decoration: none;
+}
+  .form-textarea {
+    min-height: 120px;
+  }
+  .contact-section{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border:1px solid green;
+    background: transparent;
+    box-shadow: 12px 12px 12px black;
+    width:850px;
+    border-radius: 22px;
+  }
+  .contact-section:hover{
+    background-color: transparent;
+  }
+  .form-submit {
+    width: 100%;
+    margin-top: 1.2rem;
+    background-color: #3124ca;
+    color: #fff;
+    padding: 13px 5px;
+    border-radius: 0.375rem;
+  }
+  .sub_section
+  {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .uppersection_footer
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: rgb(14, 10, 10);
+    color:rgb(233, 213, 213);
+    align-items: center;
+    text-align: center;
+    margin-top:4rem;
+    padding:1rem;
+}
+.uppersection_footer .sections p a{
+    text-decoration: none;
+}
+form-input,
+.form-textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-section {
+  width: 90%;
+  padding: 1rem;
+}
+.innerabout_me p{
+  font-size: 22px;
+  font-style: italic;
+  font-weight: bold;
+}
+@media (max-width:883px)
+{
+    .testimony_section
+    {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .testimony button
+    {
+        width:250px;
+    }
+    .testimony
+    {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .sub_section
+    {
+        display:flex;
+        flex-direction: column;
+        gap:4rem;
+    }
+    .list_of_services
+    {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 1rem;
+    }
+    .about_me img
+    {
+        width:200px;
+    }
+    .about_me
+    {
+        width:300px;
+    }
+    .contact-section
+    {
+        width:350px;
+        margin: 2rem;
+    }
+    #offcanvas-header
+    {
+        background: transparent;
+    }
+    .hexagon{
+        width:400px;
+    }
+    button
+    {
+        width:300px;
+    }
+    .services
+    {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footer
+    {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .form-input,
+    .form-textarea 
+    {
+        width:300px;
+    }
+    .upper_services .hexagon,.lower_services .hexagon
+    {
+        margin:none;
+    
+    }
+}
