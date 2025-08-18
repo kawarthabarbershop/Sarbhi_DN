@@ -50,11 +50,21 @@ body{
 }
 .about_me{
     width:700px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+}
+.quote
+{
+  color:green;
+  font-style: italic;
 }
 .about_me img
 {
     border-radius:50%;
-    height:500px;
+    height:400px;
+    width:400px;
     box-shadow: 12px 12px 12px grey;
     border-color:5px black;
 }
@@ -316,6 +326,9 @@ body{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+  }
+  .footer{
+    background: pink;
   }
   .uppersection_footer
 {
