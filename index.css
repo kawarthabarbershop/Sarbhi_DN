@@ -378,10 +378,19 @@ form-input,
         text-align: center;
         flex-direction: column;
         flex-wrap: wrap;
+
+    }
+    .testimony_section img
+    {
+      width:40px;
     }
     .testimony button
     {
-        width:250px;
+        width:300px;
+    }
+    .inner_testimony_section .statement
+    {
+      font-size: 12px;
     }
     .testimony
     {
