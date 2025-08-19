@@ -10,6 +10,10 @@
 body{
   background-image: url('./dima-solomin-WNqkaSWnK8Y-unsplash.jpg');
 }
+body,html
+{
+    overflow-x: hidden;
+}
 .section
 {
     display:flex;
